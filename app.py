@@ -71,7 +71,7 @@ def main():
     st.title("🌾 Crop Yield Predictor")
     st.write("Provide the field conditions and get a predicted yield (tons/ha).")
 
-    default_model_path = os.path.join(os.path.dirname(__file__), "model.pkl")
+    default_model_path = os.path.join(os.path.dirname(__file__), "pipeline3_revised.pkl")
     uploaded = st.file_uploader("Upload a model file (.pkl or .joblib)", type=["pkl", "joblib"], accept_multiple_files=False)
 
     if uploaded is not None:
